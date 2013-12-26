@@ -1,0 +1,21 @@
+{
+  "manifest_version": 2,
+
+  "name": "New Google Maps Measuring Tool",
+  "description": "This extension provides a measuring tool for the new Google Maps.",
+  "icons": { "128": "ruler.png" },
+  "version": "1.0",
+
+  "permissions": [
+    "activeTab"
+  ],
+
+  "background": {
+    "scripts": ["background.js"],
+    "persistent": false
+  },
+  "browser_action": {
+    "default_icon": "ruler.png",
+    "default_title": "Measure a distance on the new Google Maps."
+  }
+}
