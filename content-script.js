@@ -26,7 +26,7 @@
     var mapScaleLabel = document.getElementById('widget-scale-label');
     var mapScales = document.getElementsByClassName('widget-scale-bottomleft');
     if (mapScaleLabel && mapScales) {
-      var mapScaleDenominator = parseInt(mapScales[0].style.width, 10) + 2;
+      var mapScaleDenominator = parseInt(mapScales[0].style.width, 10);
       var mapScaleNumerator = parseInt(mapScaleLabel.innerText, 10);
       ratio = mapScaleNumerator / mapScaleDenominator;
       units = mapScaleLabel.innerText.split(' ')[1];
